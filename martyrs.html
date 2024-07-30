@@ -79,8 +79,18 @@
     <a href="https://www.tbsnews.net/bangladesh/lives-lost-quota-reform-protests-901551"> <button>Details</button></a>
 </div>
   <!--- Javascripts -->
-  <!--main --> <script src="main.js"></script>
-  <script>
+  <!--main --> <script src="main.js"> </script>
+      <script>  
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select the image element
+            var img = document.getElementById('example-image');
+
+            // Check if the src attribute is empty or not set
+            if (!img.src || img.src === window.location.href) {
+                // Set the default image source
+                img.src = '20240730_162258.jpg';
+            }
+        });
 </script>
 
 </body>
